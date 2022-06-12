@@ -1,0 +1,275 @@
+
+
+.content {
+
+  z-index: 0;
+  max-width: 1920px;
+  margin: auto;
+  max-height: auto;
+}
+
+body {
+  background-color: black;
+}
+
+.select{
+  color: white;
+  font-family: 'Impact', fantasy;
+  display: flex;
+  margin-left: 15px;
+  align-items: center;
+  padding: 15px;
+  transition-duration: 0.3s;
+}
+
+
+.select:hover{
+  background-color: rgba(81, 6, 108, 0.7);
+  color: white;
+}
+
+.card {
+
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  height: 400px;
+  width: 600px;
+  overflow: auto;
+  float: left;
+
+}
+
+.card:hover{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+div.card a, h1 {
+  color: white;
+}
+
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
+
+
+#nomesite{
+  font-family: 'Impact', fantasy;
+  font-size: 30px;
+  margin-left: 40px;
+
+
+}
+.icones {
+  transition-duration: 0.3s;
+  display: flex;
+  box-shadow: 0 1px 30px 1px rgba(0, 0, 0, 0.3);
+  margin: 70px 100px 20px 100px;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 20px 300px 20px 20px;
+  border-radius: 20px;
+}
+
+.icones:hover {
+  transform: scale(1.03,1.03);
+}
+
+.transicao {
+  background-image: url("https://i.gifer.com/N0Mb.gif");
+  height: 40px;
+  box-shadow: 0 5px 15px 2px black;
+}
+
+.redes {
+  display: flex;
+  width: 1920px;
+  height: 300px;
+}
+
+.bg1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  top: 3px;
+  width: 1920px;
+  margin-top: 10px;
+  background-image: url("https://cutewallpaper.org/25/animated-cosmic-hd-wallpaper-for-pc/137919277.jpg");
+  background-size: 100%;
+  background-repeat: repeat;
+}
+
+.bg2 {
+  position: static;
+  vertical-align: top;
+  width: 1920px;
+  background-image: url("https://img.freepik.com/free-photo/red-black-brush-stroke-banner-background-perfect-canva_1361-3597.jpg?w=2000");
+  background-size: 100%;
+  height: 770px;
+  background-repeat: no-repeat;
+}
+
+.bg3 {
+  position: static;
+  vertical-align: top;
+  width: 1920px;
+  background-image: url("https://images5.alphacoders.com/637/637668.jpg");
+  background-size: 100%;
+  height: 770px;
+  background-repeat: no-repeat;
+}
+
+.bg4 {
+  position: static;
+  vertical-align: top;
+  width: 1920px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Stranger_Things_logo.png/640px-Stranger_Things_logo.png");
+  background-size: 80%;
+  background-position: 50px 0px;
+  height: 770px;
+  background-repeat: no-repeat;
+}
+
+.bg5 {
+  position: static;
+  vertical-align: top;
+  width: 1920px;
+  background-image: url("https://images8.alphacoders.com/124/thumb-1920-1244091.jpg");
+  background-size: 100%;
+  height: 770px;
+  background-repeat: no-repeat;
+}
+
+.bg6 {
+  position: static;
+  vertical-align: top;
+  width: 1920px;
+  background-image: url("pronto.png");
+  background-size: 100%;
+  height: 770px;
+  background-repeat: no-repeat;
+}
+
+div#barra{
+  display: flex;
+  position: fixed;
+  width: 100%;
+  border: 1px solid rgba(81, 6, 100, 0.8);
+  z-index: 10;
+  top: 0px;
+  height: 39px;
+  background-color: rgba(152, 3, 206, 0.4);
+}
+
+.jogosaa{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 300px;
+  
+}
+
+img#series{
+  margin-right: 200px;
+  float:  right;
+  width: 800px;
+}
+
+.cardinho {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 250px;
+  width: 450px;
+  transition-duration: 0.3s;
+}
+
+.cardinho:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: scale(1.03,1.03);
+}
+
+.objeto{
+  transition-duration: 0.3s;
+  margin-left: 70px;
+  margin-top: 30px;
+}
+
+div.mini {
+  margin-top: 5em;
+}
+
+.objeto:hover {
+  transform: scale(1.03,1.03);  
+}
+
+.header{
+  font-family: "Lucida Console", "Courier New", monospace;
+  color: #4FF014;  
+  text-align: left;
+  margin-left: 30px;
+}
+
+.spaces {
+  margin-bottom: 200px;
+}
+
+img#hupplepuff {
+  transition-duration: 0.3s;
+  width: 200px;
+  position: sticky;
+  left: 1650px;
+  top: 50px;
+}
+
+img#hupplepuff:hover {
+  background-color: black 60%;
+  opacity: 0.3;
+}
+
+.card a {
+  font-size: 30px;
+}
+
+.topicos{
+  position: relative;
+  top: -15px;
+  background-color: black;
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-align: center;
+  box-shadow: 0 5px 15px 2px black;
+}
+
+.bloco {
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 1200px;
+  height: 300px;
+  margin-left: 70px;
+  display: inline-block;
+  box-shadow: 0 10px 30px 5px black;
+  
+}
+
+.start {
+  background-image: url();
+  
+}
+
+img#foto {
+  float: left;
+  width: 300px;
+}
+
+.imagens {
+  
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 5px;
+  margin-left: 30px;
+}
+  
