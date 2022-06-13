@@ -1,27 +1,44 @@
 
 
 .content {
-
   z-index: 0;
-  max-width: 1920px;
-  margin: auto;
+  width: 100%;
   max-height: auto;
 }
 
 body {
+  font-family: "Lucida Console", "Courier New", monospace;;
   background-color: black;
 }
 
-.select{
-  color: white;
-  font-family: 'Impact', fantasy;
+
+div#barra{
+  
   display: flex;
-  margin-left: 15px;
-  align-items: center;
-  padding: 15px;
-  transition-duration: 0.3s;
+  justify-items: space-evenly;
+
+  position: fixed;
+  width: 100%;
+  border: 1px solid rgba(81, 6, 100, 0.8);
+  z-index: 10;
+  top: 0px;
+  height: 4.1%;
+  background-color: rgba(152, 3, 206, 0.4);
 }
 
+.select{
+
+  display: flex;
+
+  align-items: center;
+  color: white;
+
+  font-size: 1em; /*colocar media*/
+
+
+  padding: 1%;
+  transition-duration: 0.3s;
+}
 
 .select:hover{
   background-color: rgba(81, 6, 108, 0.7);
@@ -30,23 +47,42 @@ body {
 
 .card {
 
-  padding: 30px;
+  padding: 2%;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 5px;
-  height: 400px;
-  width: 600px;
+  transition-duration: 0.3s;
+  width: 30%;
+  height: 300px;
   overflow: auto;
-  float: left;
 
 }
 
 .card:hover{
+  transform: scale(1.03,1.03);
   background-color: rgba(0, 0, 0, 0.8);
 }
 
 div.card a, h1 {
   color: white;
 }
+
+.card a {
+  font-size: 30px;
+}
+
+
+.cardinho {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 250px;
+  width: 450px;
+  transition-duration: 0.3s;
+}
+
+.cardinho:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: scale(1.03,1.03);
+}
+
 
 a:link { text-decoration: none; }
 
@@ -58,7 +94,7 @@ a:active { text-decoration: none; }
 
 
 #nomesite{
-  font-family: 'Impact', fantasy;
+  color: white;
   font-size: 30px;
   margin-left: 40px;
 
@@ -88,122 +124,64 @@ a:active { text-decoration: none; }
 
 .redes {
   display: flex;
-  width: 1920px;
-  height: 300px;
+    justify-content: center;
+  flex-wrap: wrap;
+  width: 100%
 }
 
 .bg1 {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  position: relative;
-  top: 3px;
-  width: 1920px;
-  margin-top: 10px;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-height: 700px;
   background-image: url("https://cutewallpaper.org/25/animated-cosmic-hd-wallpaper-for-pc/137919277.jpg");
   background-size: 100%;
   background-repeat: repeat;
 }
 
-.bg2 {
-  position: static;
-  vertical-align: top;
-  width: 1920px;
+.bg {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: static; 
+  background-size: 100%;
+  min-height: 700px;
+  background-repeat: repeat;
+}
+
+#secaofilmes {
   background-image: url("https://img.freepik.com/free-photo/red-black-brush-stroke-banner-background-perfect-canva_1361-3597.jpg?w=2000");
-  background-size: 100%;
-  height: 770px;
-  background-repeat: no-repeat;
 }
 
-.bg3 {
-  position: static;
-  vertical-align: top;
-  width: 1920px;
+#bg3 {
   background-image: url("https://images5.alphacoders.com/637/637668.jpg");
-  background-size: 100%;
-  height: 770px;
-  background-repeat: no-repeat;
+  background-position: 10px;
 }
 
-.bg4 {
-  position: static;
-  vertical-align: top;
-  width: 1920px;
+#bg4 {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Stranger_Things_logo.png/640px-Stranger_Things_logo.png");
-  background-size: 80%;
-  background-position: 50px 0px;
-  height: 770px;
-  background-repeat: no-repeat;
+  background-position: 10px;
 }
 
-.bg5 {
-  position: static;
-  vertical-align: top;
-  width: 1920px;
+#bg5 {
   background-image: url("https://images8.alphacoders.com/124/thumb-1920-1244091.jpg");
-  background-size: 100%;
-  height: 770px;
-  background-repeat: no-repeat;
 }
 
 .bg6 {
-  position: static;
-  vertical-align: top;
-  width: 1920px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 700px;
   background-image: url("pronto.png");
   background-size: 100%;
-  height: 770px;
   background-repeat: no-repeat;
 }
 
-div#barra{
-  display: flex;
-  position: fixed;
-  width: 100%;
-  border: 1px solid rgba(81, 6, 100, 0.8);
-  z-index: 10;
-  top: 0px;
-  height: 39px;
-  background-color: rgba(152, 3, 206, 0.4);
-}
-
-.jogosaa{
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 300px;
-  
-}
-
 img#series{
-  margin-right: 200px;
-  float:  right;
-  width: 800px;
-}
-
-.cardinho {
-  background-color: rgba(0, 0, 0, 0.3);
-  height: 250px;
-  width: 450px;
-  transition-duration: 0.3s;
-}
-
-.cardinho:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  transform: scale(1.03,1.03);
-}
-
-.objeto{
-  transition-duration: 0.3s;
-  margin-left: 70px;
-  margin-top: 30px;
-}
-
-div.mini {
-  margin-top: 5em;
-}
-
-.objeto:hover {
-  transform: scale(1.03,1.03);  
+  width: 50%;
+  height: auto;
 }
 
 .header{
@@ -217,52 +195,30 @@ div.mini {
   margin-bottom: 200px;
 }
 
-img#hupplepuff {
-  transition-duration: 0.3s;
-  width: 200px;
-  position: sticky;
-  left: 1650px;
-  top: 50px;
-}
-
-img#hupplepuff:hover {
-  background-color: black 60%;
-  opacity: 0.3;
-}
-
-.card a {
-  font-size: 30px;
-}
-
 .topicos{
-  position: relative;
-  top: -15px;
   background-color: black;
+  margin: 10px;
   font-family: "Lucida Console", "Courier New", monospace;
   text-align: center;
   box-shadow: 0 5px 15px 2px black;
 }
 
 .bloco {
+  display: block;
+  overflow: auto;
   background-color: black;
   border: 1px solid black;
   border-radius: 4px;
-  width: 1200px;
+  width: 60%;
   height: 300px;
   margin-left: 70px;
-  display: inline-block;
   box-shadow: 0 10px 30px 5px black;
   
 }
 
-.start {
-  background-image: url();
-  
-}
-
 img#foto {
-  float: left;
-  width: 300px;
+  width: 15%;
+  height: auto;
 }
 
 .imagens {
@@ -270,6 +226,51 @@ img#foto {
   border: 1px solid black;
   border-radius: 4px;
   padding: 5px;
-  margin-left: 30px;
 }
-  
+
+@media screen and (max-width: 1080px){
+  .bg1{
+    background-image: none;
+    background-color: rgb(80, 11, 115);
+    height: 1500px;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .bg {
+    flex-direction: column;
+  }
+
+  #secaofilmes {
+    background-image: none;
+    background-color: rgb(51, 0, 0);
+  }
+
+  #bg3 {
+    background-image: none;
+    background-color: rgb(0, 0, 102);
+  }
+  #bg4 {
+    background-image: none;
+    background-color: rgb(139, 9, 5);
+  }
+  #bg5 {
+    background-image: none;
+    background-color: rgb(0, 204, 204);
+    }
+
+  .cardinho{
+    width: 10%;
+  }
+
+  .card {
+    order: 1;
+    height: 200px;
+    width: 90%;
+  }
+
+  #foto {
+    width: 40% !important;
+  }
+
+}
+
