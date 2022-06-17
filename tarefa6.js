@@ -33,7 +33,7 @@ const nomesESobrenomes = [
   ['Adriana', 'Esteves'],
 ]
 
-const juntar = (n) => n[0] + ' ' + n[1];
+const juntar = (n) => `${n[0]} ${n[1]}`;
 
 const juntos = nomesESobrenomes.map(juntar);
 
