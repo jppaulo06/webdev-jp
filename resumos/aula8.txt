@@ -1,0 +1,96 @@
+/*
+Front pede requisição e bakc manda a requisição
+
+O servidor pode ser um intemédio entre o usuário e o banco de dados
+
+Protocolo HTTP
+
+é uma maneira de comunicação entre o cliente e o servidor.
+Toda vez que você coloca para abrir um site, faz uma requisição a partir desse protocolo. Permite obter recursos, como documentos HTML, imagens, videos, etc;
+
+
+Front -> requisição -> back end
+	 <------resposta <------
+
+O http permite muito mais q uma simples requisição. Pode carregar várias coisas.
+Pode ter alguns verbos pra isso
+
+Verbo GET: recebe dados do servidor.
+Verbo POST: inserir dados para o servidor
+PUT/PATCH: maneira de mudar dados em um servidor
+DELETE: exclui um dado do servidor. 
+
+// cabeçãlho
+
+POST(VERBO) (URL) HTTP/1.1 (versão do HTTP) 
+
+	Host: bla
+	Content-type: bla2
+	User-agent: bla3
+
+	{"name": "JOAO", "email": joao@gmail.com} // corpo
+
+fetch(url, {options})
+--> quando não há options, o get é automático. Se queremos fazer algo diferente, temos que colocar algo nesse {options}, que é opcional;
+
+Códigos HTTP: 100's informativo (trabalhando)
+200's : sucesso
+300's : redirecionamento
+400's : erro de cliente
+500's : erro de servidor
+
+Instalar NodeJS
+
+Instalar o express: npgm install express
+
+rodar node index.js
+
+const express = require('express');
+const app = express();
+
+app.listen(porta, () => {
+	console.log("eu estou funcionando")
+});
+
+// para acessar: localhost:porta
+
+app.get('/alunos', (request, response) => {
+	res.send(data);
+})
+
+app.post('/alunos', (req, res) => {
+	const aluno = req.body;
+	data.push(aluno);
+	res.status(201);
+	res.json(aluno);
+})
+
+para mandar algo pro site (fazer request), podemos fazer:
+
+fetch('http://localhost:3000/alunos', {
+	method: 'POST',
+	body: JSON.stringify({name: 'Beatriz',}),
+	headers: {
+		'Content-type': 'application/json; charset=UTF-8',
+	},
+})
+
+app.get('/alunos/:id', (req, res) => {
+	 const {id} = req.params; // eh uma maneira alternativa de fazer id = req.params.id. Isso tbm é útil no caso em que temos mais de um parametro pra pegar. É só fazer {id, casa} = req.params para pegar 2 parametros: casa e id.
+	 if (id >= data.length) res.status(404);
+	 res.json(data[id]);
+})
+
+const data = [
+	{
+		name: 'gabriel',
+	},
+	{
+		name: 'zé',
+	}
+
+]
+
+
+*/
+

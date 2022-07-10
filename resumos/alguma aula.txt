@@ -1,0 +1,98 @@
+// Aula 7
+
+/*
+OBJETOS
+declarar objeto:
+const a = {x: 1, b: 'teste'};
+
+podemos fazer métodos que retornam um array:
+
+Object.entries(a) --> retorna um array de tuplas (com entrada e valor)
+Object.values -- > retorna um array com os values
+Object.keys --> retorna um array apenas com keys
+
+A partir disso, é possível fazer um forEach, se quiser. Fica fácil de iterar sobre um objeto!
+
+JSON - JavaScript Objetct Notation
+
+Formato de troca de dados mais utilizado
+Baseado em um sobconjunto de JS
+Diferente de um object, pode armazernar apenas number, string, object, array, null (perceba q n pode algo como bool)
+Usa o padrão chave e valor.
+
+Os objetos dentro do Json devem ser outros JSONs, necessariamente
+
+no JSON, a chave deve ser determinada como STRING (entre aspas, portanto).
+JSON é como se fosse um txt
+
+const x = '{"nome": "tal", "idade": 10}'
+
+JSON.parse(x)  x era uma string e vira JSON (object)
+
+JSON.stringify(x) x era um object e vira uma string. Isso é convencional
+para enviar esse objeto para alguem, de modo q n tenhamos conflitos entre linguagens...
+
+PROGRAMAÇÃO ASSÍNCRONA
+
+Na execução assíncrona, podemos selecionar quem é preferencia no processamento.
+Podemos ordenar o processamento de formas mais convencionais.
+
+promise.then(value => {
+	bla qnd dá certo
+});
+
+promise.catch(value => {
+	bla2 no erro;
+})
+
+Podemos concaternar como:
+
+promise.then(value => {
+	bla qnd dá certo
+}).catch(value => {
+	bla2 no erro;
+})
+
+----- FETCH --- 
+Uma maneira de pedir um dado ou enviar um dado para o servidor
+
+- Enviar uma compra
+- Pedir info de usuario
+- Pedir info não local, guardada no servidor.
+
+let promise = fetch(url, [options]);
+
+url: caminho para o servidor
+
+O retorno do FETCH é uma promessa, uma vez que pode demorar.
+
+O retorno Responde possui vários métodos baseados em Promises, que dão acesso ao 
+corpo em vários métodos em várias formas
+
+- response.text() - lê resposta e retorna como texto
+
+- response.json() - interpreta a resposta como JSON
+
+- response.blob() - retorna a resposta como blob (binário)
+
+let json = fetch(url)
+	.then(response => response.json())
+		.then(json => json.algumacoisa) parece bobo, mas é necessario, uma vez que json ainda era uma promessa
+	.catch(alert("erro " + response.status));
+
+	O catch, aqui, pega erro de quaisquer then, nesse caso.
+
+	let response = await fetch(url); -> criar uma variável assíncrona. Só vai receber valor na hora correta
+
+	if(response.ok){
+		bla;
+	}
+	else bla;
+
+	Quando o texto tá entre crases, podemos colocar `bla ${valor}` para substituir facilmente
+
+	
+
+
+
+*/
