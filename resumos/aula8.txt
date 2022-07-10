@@ -1,5 +1,5 @@
 /*
-Front pede requisição e bakc manda a requisição
+Front pede requisição e bakc manda a resposta
 
 O servidor pode ser um intemédio entre o usuário e o banco de dados
 
